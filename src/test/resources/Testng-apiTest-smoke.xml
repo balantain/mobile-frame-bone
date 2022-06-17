@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WatchStreamPage test" verbose="1" >
+    <test name="Can post a message in live chat"   >
+        <classes>
+            <class name="tests.WatchStreamPageTest">
+                <methods>
+                    <include name="ifApiSearchResultReturnsOnlyStreams"/>
+                    <include name="canPostAMessageInLiveChat"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

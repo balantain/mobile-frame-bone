@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Settings page smoke test" verbose="1" >
+    <test name="UI tests"   >
+        <classes>
+            <class name="tests.SettingsPageTest">
+                <methods>
+                    <include name="allSettingsAreAvailable"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

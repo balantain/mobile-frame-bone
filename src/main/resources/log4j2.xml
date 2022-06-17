@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="com.epam.ta.reportportal.log4j.appender" status="INFO">
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout>
+                <Pattern>%d %p %c{2} [%t] %l %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <ReportPortalLog4j2Appender name="ReportPortalAppender" >
+            <PatternLayout>
+                <Pattern>%d %p %c{2} [%t] %l %m%n</Pattern>
+            </PatternLayout>
+        </ReportPortalLog4j2Appender>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console" level="WARN"/>
+            <AppenderRef ref="ReportPortalAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,15 @@
+package api.dto.search.list;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class PageInfo {
+    private int resultsPerPage;
+    private int totalResults;
+}
